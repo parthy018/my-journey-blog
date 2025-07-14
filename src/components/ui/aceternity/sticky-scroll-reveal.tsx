@@ -146,12 +146,11 @@ export const StickyScrollReveal = ({
                   <p className="text-lg text-muted-foreground">{item.description}</p>
                   <button
                     onClick={() => navigate(`/blog/${item.id}`)}
-                    className="mt-4 inline-block text-primary font-semibold text-black bg-primary border-2 py-2 px-4 rounded-lg border-primary hover:bg-primary/90 transition-colors duration-300
-                    "
-                  > 
-                      Read More
-             
+                    className="mt-4 px-5 py-2 rounded-lg border-2 border-primary bg-primary text-black font-semibold transition-colors duration-300 hover:bg-primary/90"
+                  >
+                    Read More
                   </button>
+
                 </div>
               </div>
             ))}
