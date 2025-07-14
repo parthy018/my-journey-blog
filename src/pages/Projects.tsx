@@ -86,7 +86,7 @@ const Projects = () => {
 
           {/* Projects Grid */}
           <section className="py-20 container px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {projects.map((project) => (
                 <CardSpotlight key={project.id} className="p-0 overflow-hidden">
                   <div className="aspect-video w-full">
