@@ -7,31 +7,31 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { LampContainer } from "@/components/ui/aceternity/lamp";
 import { Github, ExternalLink } from "lucide-react";
-
+import heroImage from "/hero-dashboard.jpg";
 // Mock project data
 const projects = [
   {
-    id: 1,
-    title: "Survey Insights Platform",
-    description: "A SaaS survey application built with React.js that allows businesses to create, distribute, and analyze customer surveys with real-time data visualization.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=225&fit=crop",
-    tags: ["React", "Redux Toolkit", "Chart.js", "Firebase"],
-    github: "https://github.com/username/survey-insights",
-    live: "https://survey-insights-demo.vercel.app",
-    achievements: [
-      "Improved UI/UX responsiveness by 40%",
-      "Optimized Redux state management, reducing complexity by 35%",
-      "Added dynamic routing using React Router, reducing page load time by 30%"
-    ]
-  },
+  id: 3,
+  title: "AI Outreach Landing Page",
+  description: "Landing page for ai.servigo.shop — a modern AI-powered outreach platform that helps businesses convert leads automatically via Email, SMS, WhatsApp, and Voice.",
+  image: heroImage, // Replace with your actual hero or meta image
+  tags: ["React", "nodejs", "n8n", "AI Automation", "Marketing"],
+  live: "https://ai.servigo.shop/",
+  achievements: [
+    "Built a fully responsive marketing landing page using React and Tailwind CSS",
+    "Implemented feature sections, pricing toggle, testimonials, and CTA blocks to drive conversions",
+    "Optimized for SEO and performance across mobile, tablet, and desktop devices"
+  ]
+},
+
   {
     id: 2,
     title: "Room Buddy",
     description: "A platform that helps users find compatible roommates and available rooms based on their preferences, budget, and location.",
     image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=225&fit=crop",
     tags: ["Next.js", "Tailwind CSS", "MongoDB", "WebSockets"],
-    github: "https://github.com/username/room-buddy",
-    live: "https://room-buddy-demo.vercel.app",
+    github: "https://github.com/parthy018/roomBuddy",
+    live: "https://room-buddy-five.vercel.app/",
     achievements: [
       "Re-architected the app using React.js, reducing load times by 60%",
       "Developed real-time room listings and roommate matching features",
@@ -39,33 +39,20 @@ const projects = [
     ]
   },
   {
-    id: 3,
-    title: "Dev Portfolio Generator",
-    description: "A web application that allows developers to create personalized portfolios by importing their GitHub repositories and customizing the layout and style.",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=225&fit=crop",
-    tags: ["React", "GitHub API", "CSS Modules", "Vercel"],
-    github: "https://github.com/username/dev-portfolio",
-    live: "https://dev-portfolio-demo.vercel.app",
+    id: 1,
+    title: "SVB Patel School Website",
+    description: "An informative and responsive school website for SVB Patel School with sections for news, events, admissions, and more.",
+    image: "https://www.svbpatelschool.com/assets/new_circularlogo-D90vp3q1.png", // replace with actual hero/banner image from the site
+    tags: ["Next.js", "Tailwind CSS", "SEO", "Responsive Design"],
+    github: "", // optional if you didn't make code public
+    live: "https://www.svbpatelschool.com/",
     achievements: [
-      "Integrated with GitHub API to automatically import user projects",
-      "Created a drag-and-drop interface for customizing portfolio layout",
-      "Implemented theme customization with real-time preview"
+      "Built a fully responsive, production-ready website for a real client",
+      "Used modern frontend stack (Next.js, Tailwind CSS) to optimize load times and user experience",
+      "Integrated admission form, school info, and news section to enhance parent engagement"
     ]
   },
-  {
-    id: 4,
-    title: "Code Snippet Manager",
-    description: "A developer tool for organizing, searching, and sharing code snippets with syntax highlighting and tagging capabilities.",
-    image: "https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?w=400&h=225&fit=crop",
-    tags: ["TypeScript", "Express", "PostgreSQL", "Prism.js"],
-    github: "https://github.com/username/snippet-manager",
-    live: "https://snippet-manager-demo.vercel.app",
-    achievements: [
-      "Built a search engine with fuzzy matching for code snippets",
-      "Implemented syntax highlighting for over 100 programming languages",
-      "Created a sharing system with privacy controls and expiration settings"
-    ]
-  }
+  
 ];
 
 const Projects = () => {

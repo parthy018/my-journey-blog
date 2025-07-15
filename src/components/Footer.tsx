@@ -28,11 +28,6 @@ export const Footer = () => {
                 </a>
               </Button>
               <Button variant="ghost" size="sm" asChild>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                  <Twitter size={20} />
-                </a>
-              </Button>
-              <Button variant="ghost" size="sm" asChild>
                 <a href="mailto:hello@example.com">
                   <Mail size={20} />
                 </a>
